@@ -61,10 +61,78 @@ header h1 {
 
   footer div {
       float: right;
-      line-highte: 1.5;
+      line-height: 1.5;
       text-align: right;
   }
 
   footer a {
-      collor: #024e76;
+      color: #024e76;
+  }
+  
+  /* Section Padding */
+  section {
+    padding: 60px;
+  }
+  /* Start Hero Style Section */
+  .hero {
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+  }
+  /* End Hero Stile Section */
+
+  /* Strt Hero-Form Syle Section */
+  .hero-form {
+      border: 3px solid #024e76;
+      background-color: #fce138;
+      padding: 20px;
+      width: 500px;
+      color: #024e76;
+      position: absolute;
+      bottom: 120px;
+      right: 140px;
+      
+  }
+
+  section h3 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  .hero-form p {
+    margin: 5px 0 5px 0;
+  }
+
+  .form input {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-form label {
+      margin: 0 5px;
+  }
+
+  /* Start Hero Button Style */
+  .hero-form button {
+      color: #fce138;
+      background-color: #024e76;
+      border:none;
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+
+  /* End Hero Button Style */
+
+  /* Start What We Do Style */
+
+  .into {
+    text-align: center;
   }
