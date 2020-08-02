@@ -12,3 +12,5 @@ https://nearnantino.githun.io./run-buddy/
 
 ## Contribution
 Made with ❤️ by Robert Skidmore
+
+## ©️2019 Run Buddy, Inc
