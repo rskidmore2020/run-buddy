@@ -51,28 +51,7 @@ header h1 {
       font-size: 1.55vwx;
   }
 
-  footer {
-      background: #fce138;
-      width: 100%;
-      padding: 40px 35px;
-  }
-
-  footer h2 {
-      display: inline;
-      color: #024e76;
-      font-size: 30px;
-      margin: 0;
-  }
-
-  footer div {
-      float: right;
-      line-height: 1.5;
-      text-align: right;
-  }
-
-  footer a {
-      color: #024e76;
-  }
+  
   
   /* Section Padding */
   section {
@@ -81,12 +60,12 @@ header h1 {
   /* Start Hero Style Section */
   .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
-
-  }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
   /* End Hero Stile Section */
 
   /* Strt Hero-Form Syle Section */
@@ -94,12 +73,24 @@ header h1 {
       border: 3px solid #024e76;
       background-color: #fce138;
       padding: 20px;
-      width: 500px;
       color: #024e76;
-      position: absolute;
-      bottom: 120px;
-      right: 140px;
-      
+      width: 40%;   
+      margin: 3.5%;
+  }
+
+  .hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138
   }
 
   section h3 {
@@ -169,7 +160,7 @@ header h1 {
     border-bottom: 3px solid;
     
   }
-  /* updating What We Do Bottom Border */
+  /* Updating What We Do Bottom Border */
   .primary-border {
     border-color: #fce138;
   }
@@ -252,7 +243,7 @@ header h1 {
     line-height: 1.3;
   }
 
-  /* START REACH OUT STYLES */
+  /* Starty of Reach out Styles */
   .contact {
     text-align: center;
     background: #024e76;
@@ -284,5 +275,30 @@ header h1 {
   .contact-info a {
     color:#fce138;
   }
-  /* END OF REACH OUT STALES */
+  /* End of Reach Out Styles */
 
+  /* Start of Footer Styles */
+  footer {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+    display: flex;  
+    justify-content: space-between;
+    flex: wrap;
+  }
+
+  footer h2 {
+      color: #fce138;
+      font-size: 30px;
+      margin: 0;
+  }
+
+  footer div {
+      Color: #fce138;
+      line-height: 1.5;
+      text-align: right;
+  }
+
+  footer a {
+      color: #fce138;
+  }
+/* End of Reach out Styles */
