@@ -25,6 +25,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 9999; /* This give the header a staking order so that it stays on top of the rest of the items on the page. */
 }
 
 header h1 {
@@ -159,8 +160,8 @@ header h1 {
 
 .checkbox-wrapper label, .radio-wrapper label {
   position: relative;
-  left: 10px;
-  margin: 10px;
+  left: -8px;
+  margin: 9px;
   line-height: 1.6;
 }
 
@@ -172,7 +173,7 @@ header h1 {
   border: 1px solid #024e76;  
   position: absolute;
   top: -4px;
-  left: -42px;
+  left: -23px;
 }
 
 .radio-wrapper label::before {
@@ -185,8 +186,9 @@ header h1 {
   border-radius: 50%;
   background: #024e76;
   position: absolute;
-  left: -41px;
+  left: -22px;
   top: -3px;
+  background-image: radial-gradient(circle, #39a6b2, #024e76);
 }
   
 .checkbox-wrapper label::after {
@@ -196,8 +198,17 @@ header h1 {
   border-left: 2px solid #024e76;
   border-bottom: 2px solid #024e76;
   position: absolute;
-  left: -34px;
+  left: -20px;
   top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after {
+  content: "";
 }
   /* End Hero Button Style */
 
