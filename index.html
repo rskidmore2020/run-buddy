@@ -61,18 +61,24 @@
                     <p label for="phone">Enter a telephone number:</label></p>
                     <input type="te>l" placeholder="Phone Number" name="phone" id="phone" class="form-input">
 
-                    <p>Have you worked out with a trainer before?
-                    <input type="radio" name="trainer-confirmation" id="trainer-yes"/>
-                    <label for="trainer-yes">Yes</label>
-                    <input type="radio" name="trainier-confirmation" id="trainer-no"/>
-                    <label for="trainer-no">No</label>
-                    
-                    
-                    <label for="checkbox">
-                        I acknowledge that I am at least 18 years if age.
-                    </label>
-                    <input type="checkbox" name="age-athentication" id="checkbox" />
+                    <p>
+                        Have you worked out with a trainer before?
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-yes" />
+                            <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-no" />
+                            <label for="trainer-no">No</label>
+                        </span>
                     </p>
+                    <p>
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="age-confirmation" id="checkbox" />
+                            <label for="checkbox">I acknowledge that I am at least 18 years of age. </label>
+                        </span>
+                    </p>
+                    
                     <button type="submit">
                         Get running!
                     </button>
