@@ -61,10 +61,13 @@ header h1 {
   }
   
   header nav ul li a:hover {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 15px;
       margin: 10px 15px;
       font-weight: lighter;
       font-size: 1.55vwx;
-      text-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-shadow: none;
   }
 
   
@@ -324,8 +327,45 @@ header h1 {
     color: var(--primary-color);
   }
 
-  .trainer img {
+  .trainer-img {
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+  }
+
+  .trainer-img h3 {
+    position: relative;
+  }
+
+  .trainer-img h4 {
+    position: relative;
+  }
+
+  .trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(252, 225, 56, 0.3);
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .trainer-1 {
+    background-image: url("../images/trainer-1.jpg");
+    background-size: 100% 300px;
+  }
+
+  .trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+    background-size: 100% 300px;
+  }
+
+  .trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+    background-size: 100% 300px;
   }
 
   .trainer-bio {
@@ -465,7 +505,7 @@ header h1 {
     outline: none;
   }
 
-  .contact-form button:hover {
+  .contact-form button {
     width: 100%;
     border: none;
     background: var(--primary-color);
@@ -473,6 +513,17 @@ header h1 {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 15px;
+  }
+
+  .contact-form button:hover {
+    width: 100%;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
     border-radius: 15px;
   }
   /* End of Reach Out Styles */
